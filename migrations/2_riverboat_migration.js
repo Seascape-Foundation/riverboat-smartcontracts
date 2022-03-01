@@ -2,11 +2,6 @@ var Riverboat = artifacts.require("./Riverboat.sol");
 var RiverboatNft = artifacts.require("./RiverboatNft.sol");
 var RiverboatFactory = artifacts.require("./RiverboatFactory.sol");
 
-
-
-
-
-
 module.exports = async function(deployer, network) {
     let accounts = await web3.eth.getAccounts();
     console.log(accounts[0]);
