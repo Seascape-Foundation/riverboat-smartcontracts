@@ -40,7 +40,8 @@ let init = async function(_networkId) {
   let bridged = await token.bridges(erc20Handler)
   console.log(`${erc20Handler} allowed to bridge? ${bridged}`)
 
-  process.exit(1);
+  let bridgeAllowed = await token.bridgeAllowed()
+  console.log(`Is smartcontract allowed bridging? ${bridgeAllowed}`)
 
   /// call this first
   console.log("attempting to add bridge...");
