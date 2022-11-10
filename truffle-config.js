@@ -35,6 +35,16 @@ module.exports = {
           })
         },
         network_id:1284
+      },
+      moonriver : {
+        provider: function() {
+          return new HDWalletProvider({
+            privateKeys: [""],
+            providerOrUrl: "https://moonriver.api.onfinality.io/public",
+            addressIndex: 0
+          })
+        },
+        network_id:1285
       }
       // rinkeby: {
       //   provider: function() {
